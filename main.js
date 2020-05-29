@@ -21,7 +21,7 @@ btnGet.addEventListener('click', e => {
 
 	btnDl.setAttribute('download', userID + '.txt')
 
-	fetchJsonp(`https://api.vk.com/method/friends.get?user_id=${userID}&access_token=d166a2d8779a6a7855dc3157ee38f12f1f62e0581bac95081765a8872c48247785b706a7afe9b52a8f768&v=5.78&fields=nick`)
+	fetchJsonp(`https://api.vk.com/method/friends.get?user_id=${userID}&access_token=cb840a3d06c3535fb28b76ff763b12619461487b10f20b7d34e1544f813504dec8411bf2aa405ed5a308c&v=5.78&fields=nick`)
 		.then(response => {
 		response.json().then((data) => {
 			if (data.error) {
