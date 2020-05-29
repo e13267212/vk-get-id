@@ -10,7 +10,7 @@ getBtn.addEventListener('click', e => {
 		link = document.querySelector('.link').value,
 		name = link.replace('https:', '').replace('http:', '').replace('//', '').replace('vkontakte.ru/', '').replace('vk.com/', '')
 
-	fetchJsonp(`https://api.vk.com/method/utils.resolveScreenName?screen_name=${name}&access_token=d166a2d8779a6a7855dc3157ee38f12f1f62e0581bac95081765a8872c48247785b706a7afe9b52a8f768&v=5.78`)
+	fetchJsonp(`https://api.vk.com/method/utils.resolveScreenName?screen_name=${name}&access_token=cb840a3d06c3535fb28b76ff763b12619461487b10f20b7d34e1544f813504dec8411bf2aa405ed5a308c&v=5.78`)
 		.then(r => r.ok ? r.json() : {})
 		.then(data => {
 			let res = data.response
