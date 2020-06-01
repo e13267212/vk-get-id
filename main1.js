@@ -41,7 +41,7 @@ btnGet.addEventListener('click', e => {
 
 			friends.items.forEach(friend => {
 				table.innerHTML += '<tr><td>[<a href="@' + friend.id + '" target="_blank" rel="nofollow noopener">' + friend.id + '</a>]</td><td>' + friend.first_name + ' ' + friend.last_name + '</td></tr>'
-				friendsList += '@' + friend.id + ' | ' + friend.first_name + ' ' + friend.last_name + '\r\n'
+				friendsList += '@id' + friend.id + ' | ' + friend.first_name + ' ' + friend.last_name + '\r\n'
 			})
 
 
